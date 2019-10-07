@@ -1,0 +1,16 @@
+{
+  "name": "Kraken manager extension",
+  "description": "",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://www.kraken.com/*"],
+      "js": ["jquery.min.js", "kraken-manager.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": ["images/*"]
+}
